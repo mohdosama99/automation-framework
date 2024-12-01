@@ -34,7 +34,7 @@ To run this project, you need:
    Clone this repository to your local machine using the following command:
    
    ```bash
-   git clone https://github.com/your-username/repository-name.git
+   git clone [https://github.com/your-username/repository-name.git](https://github.com/mohdosama99/automation-framework)
 
 
 **Set Up Environment Variables Before running the tests, set up the following environment variables:**
