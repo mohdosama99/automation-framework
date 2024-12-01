@@ -4,7 +4,8 @@
 	<test parallel="classes" name="Test">
 		<!-- Defining a parameter in the XML -->
 		<parameter name="platform" value="web" />
-		<parameter name="browser" value="Chrome" />
+		<parameter name="env" value="android" />
+
 		<classes>
 			<class name="appTests.ChangeSetting" />
 			<class name="appTests.SearchFlow" />

@@ -5,6 +5,7 @@
 
 		<!-- Defining a parameter in the XML -->
 		<parameter name="platform" value="web" />
+		<parameter name="env" value="prod" />
 		<parameter name="browser" value="Chrome" />
 		<classes>
 			<class name="webTests.CompleteFlow" />

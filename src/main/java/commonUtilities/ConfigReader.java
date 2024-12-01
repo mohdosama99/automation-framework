@@ -4,6 +4,8 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.testng.Reporter;
+
 public class ConfigReader {
 	private static Properties properties = new Properties();
 	private static String browser;
@@ -13,13 +15,14 @@ public class ConfigReader {
 	private static String env;
 
 	static {
-		
+
 		platform = System.getenv("platform");
 		if (platform == null || platform.isEmpty()) {
-			throw new IllegalArgumentException(
-					"Platform not specified. Please set the 'platform' environment variable.");
-		} else {
-			
+			platform = Reporter.getCurrentTestResult().getTestContext().getCurrentXmlTest().getParameter("platform");
+			if (platform == null || platform.isEmpty()) {
+				throw new IllegalArgumentException(
+						"Platform not specified. Please set the 'platform' environment variable or define it in the TestNG XML file.");
+			}
 		}
 
 		env = System.getenv("env");
@@ -41,13 +44,14 @@ public class ConfigReader {
 		}
 
 		// Fetch other properties
-		
-		if(System.getenv("browser") != null) {
+
+		if (System.getenv("browser") != null) {
 			browser = System.getenv("browser");
 		} else {
 			browser = properties.getProperty("browser");
 		}
-		//browser = System.getenv("browser") != null ? System.getenv("browser") : properties.getProperty("browser");
+		// browser = System.getenv("browser") != null ? System.getenv("browser") :
+		// properties.getProperty("browser");
 
 		// Fetch APK/IPA path based on platform
 		if (platform.equalsIgnoreCase("android")) {
@@ -62,7 +66,7 @@ public class ConfigReader {
 		}
 
 	}
-	
+
 	public static String getProperties(String key) {
 		return properties.getProperty(key);
 	}
