@@ -2,6 +2,7 @@ package webPages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -10,6 +11,7 @@ import commonUtilities.CommonFunction;
 public class RegistrationPage {
 	private WebDriver driver;
 	CommonFunction CF = new CommonFunction(driver);
+	static Actions action;
 
 	public RegistrationPage(WebDriver driver) {
 		this.driver = driver;
@@ -40,14 +42,17 @@ public class RegistrationPage {
     }
 
     public void clickShowPasswordAdvice() {
+    	CF.waitForSeconds(2);
         showPasswordAdvice.click();
     }
 
     public void clickRegister() {
+    	CF.waitForSeconds(3);
         registerBtn.click();
     }
 
     public boolean isRegistrationSuccessful() {
+    	CF.waitForSeconds(2);
         return successMessage.isDisplayed();
     }
 
@@ -86,13 +91,10 @@ public class RegistrationPage {
     }
     
     public void fillSecurityDetails() {
-    	//CF.waitForElementToBeClickable(securityQuesBox);
+    	action = new Actions(driver);
+    	action.moveToElement(securityQuesBox).click().perform();
     	CF.waitForSeconds(2);
-    	securityQuesBox.click();
-    	//securityQuesBox.clear();
-    	//securityQuesBox.click();
-    	CF.waitForSeconds(2);
-    	securityQuestion.click();
+    	action.moveToElement(securityQuestion).click().perform();
     	securityAnswer.sendKeys("TestAutomation");
     	CF.waitForSeconds(2);
     	
@@ -117,7 +119,7 @@ public class RegistrationPage {
     @FindBy(id = "repeatPasswordControl")
     private WebElement repeatPassword;
     
-    @FindBy(xpath = "//div[@class='mat-select-arrow-wrapper ng-tns-c30-11']/..")
+    @FindBy(xpath = "//div[contains(@class, 'mat-form-field-infix')]//mat-select[@name='securityQuestion']")
     private WebElement securityQuesBox;
     
     @FindBy(xpath = "(//span[@class='mat-option-text'][contains(text(),'Mother')])[1]")
@@ -126,13 +128,13 @@ public class RegistrationPage {
     @FindBy(id = "securityAnswerControl")
     private WebElement securityAnswer;
 
-    @FindBy(id = "registerButton")
+    @FindBy(xpath = "//*[contains(text(),' Register ')]")
     private WebElement registerBtn;
 
     @FindBy(xpath = "//span[@class='mat-slide-toggle-thumb-container']")
     private WebElement showPasswordAdvice;
 
-    @FindBy(xpath = "//*[contains(text(),'Registration successful')]")
+    @FindBy(xpath = "//*[contains(text(),'Registration completed successfully. You can now log in.')]")
     private WebElement successMessage;
 
     @FindBy(id = "loginLink")

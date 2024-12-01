@@ -42,9 +42,10 @@ public class LoginPage {
 		loginButton.click();
 	}
 
-//	public boolean isLoginSuccessful() {
-//		return loginSuccessMessage.isDisplayed();
-//	}
+	public boolean isLoginSuccessful() {
+		CF.waitForSeconds(2);
+		return AddToBasket.isDisplayed();
+	}
 
 	@FindBy(id = "navbarAccount")
 	private WebElement AccountButton;
@@ -61,7 +62,7 @@ public class LoginPage {
 	@FindBy(id = "loginButton")
 	private WebElement loginButton;
 
-//	@FindBy(xpath = "//*[contains(text(),'Login successful')]")
-//	private WebElement loginSuccessMessage;
+	@FindBy(xpath = "//*[contains(text(),'Add to Basket')]")
+	private WebElement AddToBasket;
 
 }

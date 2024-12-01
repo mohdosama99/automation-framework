@@ -46,7 +46,7 @@ public class CompleteFlow extends BaseClass {
         checkoutPage.enterAddressInformation();
         checkoutPage.selectDeliveryMethod();
         Assert.assertTrue(checkoutPage.isPaymentPageDisplayed(), "Payment page is not displayed.");
-        //Assert.assertTrue(checkoutPage.isWalletEmpty(), "Wallet is not empty.");
+        Assert.assertTrue(checkoutPage.isWalletEmpty(), "Wallet is not empty.");
         checkoutPage.addCreditCardInformation("testAuto","4111111111111111", "12", "2081");
         checkoutPage.clickCompletePurchase();
         Assert.assertTrue(checkoutPage.isPurchaseSuccessful(), "Purchase was not successful.");

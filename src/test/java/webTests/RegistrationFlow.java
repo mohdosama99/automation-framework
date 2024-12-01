@@ -24,33 +24,18 @@ public class RegistrationFlow extends BaseClass {
 		RP.triggerValidationMessages();
 		RP.CheckErrorMessage();
 		RP.fillSecurityDetails();
-		
 		String selfGeneratedEmail = "testuser" + System.currentTimeMillis() + "@example.com";
 		String selfGeneratedPassword = "TestPassword123";
-
 		RP.enterEmail(selfGeneratedEmail);
 		RP.enterPassword(selfGeneratedPassword);
 		RP.enterConfirmPassword(selfGeneratedPassword);
-
-		// Step 5: Click on "Show Password Advice"
 		RP.clickShowPasswordAdvice();
-
-		// Step 6: Click on "Register"
 		RP.clickRegister();
-
-		// Step 7: Assert the registration success message
 		Assert.assertTrue(RP.isRegistrationSuccessful(), "Registration failed!");
-
-		// Step 8: Navigate to login page
-		LoginPage loginPage = RP.navigateToLoginPage();
-
-		// Step 9: Log in using the self-generated information
-		loginPage.enterEmail(selfGeneratedEmail);
-		loginPage.enterPassword(selfGeneratedPassword);
-		loginPage.clickLogin();
-
-//		// Step 10: Assert successful login
-//		Assert.assertTrue(loginPage.isLoginSuccessful(), "Login failed!");
+		LP.enterEmail(selfGeneratedEmail);
+		LP.enterPassword(selfGeneratedPassword);
+		LP.clickLogin();
+		Assert.assertTrue(LP.isLoginSuccessful(), "Login failed!");
 
 	}
 
