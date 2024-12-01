@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.TaskOne">
+      <class name="appTests.SearchFlow">
         <methods>
           <include name="teardown"/>
           <include name="setup"/>
-          <include name="TaskOne"/>
+          <include name="SearchFlow"/>
         </methods>
-      </class> <!-- tests.TaskOne -->
+      </class> <!-- appTests.SearchFlow -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

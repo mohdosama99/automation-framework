@@ -5,7 +5,9 @@ import java.net.URL;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
 import commonUtilities.ConfigReader;
 import io.appium.java_client.AppiumDriver;
@@ -33,9 +35,13 @@ public class DriverFactory {
 		}
 		if (platform.equalsIgnoreCase("web")) {
 			if (browser.equalsIgnoreCase("chrome")) {
-				driver = new ChromeDriver();
+				ChromeOptions option = new ChromeOptions();
+				option.addArguments("--incognito");
+				driver = new ChromeDriver(option);
 			} else if (browser.equalsIgnoreCase("firefox")) {
-				driver = new FirefoxDriver();
+				FirefoxOptions option = new FirefoxOptions();
+				option.addArguments("--incognito");
+				driver = new FirefoxDriver(option);
 			} else {
 				throw new IllegalArgumentException("Unsupported browser: " + browser);
 			}

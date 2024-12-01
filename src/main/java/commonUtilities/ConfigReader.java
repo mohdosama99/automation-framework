@@ -15,11 +15,14 @@ public class ConfigReader {
 	static {
 
 		// Fetch platform from environment variable only
-		platform = System.getenv("platform");
+		
 
 		if (platform == null || platform.isEmpty()) {
-			throw new IllegalArgumentException(
-					"Platform not specified. Please set the 'platform' environment variable.");
+			platform = "android";
+//			throw new IllegalArgumentException(
+//					"Platform not specified. Please set the 'platform' environment variable.");
+		} else {
+			platform = System.getenv("platform");
 		}
 
 		env = System.getenv("env");
