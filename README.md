@@ -39,16 +39,26 @@ To run this project, you need:
 
 **Set Up Environment Variables Before running the tests, set up the following environment variables:**
 
-platform: Defines the platform for testing. It can be set to one of the following:
+**platform** Specifies the testing platform.
+Available options:
+web (default)
+android
+ios
 
-web (default) android ios browser: Define which browser you want to run tests on. Options:
+**browser** Specifies the browser to run tests on.
+Available options:
+Chrome (default)
+Firefox
+Edge
 
-Chrome (default) Firefox Edge env: Set the environment for testing. Options:
+**env** Defines the testing environment.
+Available options:
+prod (default)
+test
 
-prod (default) test
+**You can set these environment variables:**
 
-You can set these environment variables in your terminal as follows:
-
-export platform=web export browser=Chrome export env=prod
+**Directly in the environment variable settings of your run configuration.
+Or, while executing the entire test suite, use the appropriate XML file, such as AppSuite or WebSuite.**
 
 **Troubleshooting Test not running:** Ensure that your platform and browser are properly set through environment variables or TestNG parameters. Environment variables not found: Verify that you have correctly set the environment variables for platform, browser, and environment before running the tests.
