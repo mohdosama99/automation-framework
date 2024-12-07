@@ -14,6 +14,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import base.WebDriverManager;
 import commonUtilities.CommonFunction;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.AppiumDriver;
@@ -22,11 +23,12 @@ import io.appium.java_client.TouchAction;
 
 public class JuiceShop {
 	private AppiumDriver appiumDriver;
-	CommonFunction cf = new CommonFunction(appiumDriver);
+	CommonFunction cf;
 
 	public JuiceShop(AppiumDriver appiumDriver) {
 		this.appiumDriver = appiumDriver;
 		PageFactory.initElements(appiumDriver, this);
+		cf = new CommonFunction(appiumDriver);
 	}
 
 	public void DismissAlerts() {
@@ -83,7 +85,7 @@ public class JuiceShop {
 			e.printStackTrace();
 			NavigateBack.click();
 		}
-		
+
 	}
 
 	public void doubleClickElement(WebElement element) {
@@ -99,14 +101,14 @@ public class JuiceShop {
 		clickSequence.addAction(finger.createPointerUp(PointerInput.MouseButton.LEFT.asArg()));
 		appiumDriver.perform(Arrays.asList(clickSequence));
 	}
-	
+
 	public void NavigateToSettingPage() {
 		HamburgerMenu.click();
 		cf.waitForSeconds(1);
 		SettingButton.click();
 		cf.waitForSeconds(1);
 	}
-	
+
 	public void disableAllOptions() {
 		cf.waitForElementToBeClickable(ShowImages);
 		ShowImages.click();
@@ -118,19 +120,19 @@ public class JuiceShop {
 		SendCrashReport.click();
 		cf.waitForSeconds(2);
 	}
-	
+
 	public void NavigateBack() {
 		NavigateBack.click();
 		cf.waitForSeconds(2);
 	}
-	
+
 	public boolean verifyHomePage() {
 		return HomePage.isDisplayed();
 	}
 
 	@FindBy(id = "android:id/button1")
 	private WebElement dismissAlert;
-	
+
 	@FindBy(id = "org.wikipedia.alpha:id/single_fragment_toolbar")
 	private WebElement HomePage;
 
@@ -160,12 +162,12 @@ public class JuiceShop {
 
 	@FindBy(xpath = "//android.widget.ImageButton[@content-desc=\"Navigate up\"]")
 	private WebElement NavigateBack;
-	
+
 	@FindBy(id = "org.wikipedia.alpha:id/menu_overflow_button")
-	private WebElement HamburgerMenu;	
+	private WebElement HamburgerMenu;
 	@FindBy(id = "org.wikipedia.alpha:id/explore_overflow_settings")
 	private WebElement SettingButton;
-	
+
 	@FindBy(xpath = "(//android.widget.Switch[@resource-id=\"org.wikipedia.alpha:id/switchWidget\"])[1]")
 	private WebElement ShowImages;
 	@FindBy(xpath = "(//android.widget.Switch[@resource-id=\"org.wikipedia.alpha:id/switchWidget\"])[2]")

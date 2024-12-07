@@ -1,45 +1,40 @@
 package base;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 
 import commonUtilities.ConfigReader;
 import io.appium.java_client.AppiumDriver;
 
 public class BaseClass {
 	protected WebDriver driver;
-	protected AppiumDriver appiumDriver;
+	protected AppiumDriver appiumDriver; // For mobile platforms
+	protected RemoteWebDriver remoteDriver; // For web platforms
 
-	@BeforeMethod
+	@BeforeClass
 	public void setup() throws Exception {
-		// Fetch environment and platform
-		String env = ConfigReader.getEnv();
+		driver = WebDriverManager.getInstance().getDriver();
+
+		// Identify and cast the driver based on the platform
 		String platform = ConfigReader.getPlatform();
-
-		if (platform == null || platform.isEmpty()) {
-			throw new IllegalArgumentException("Platform not specified. Please set the 'platform' variable.");
-		}
-
-		// Initialize WebDriver for web or AppiumDriver for mobile.
 		if (platform.equalsIgnoreCase("web")) {
-			driver = DriverFactory.getWebDriver(); // Initialize WebDriver for web automation
-			driver.get(ConfigReader.getUrl()); // Navigate to the URL
+			remoteDriver = (RemoteWebDriver) driver;
 		} else if (platform.equalsIgnoreCase("android") || platform.equalsIgnoreCase("ios")) {
-			appiumDriver = DriverFactory.getAppiumDriver(); // Initialize AppiumDriver for mobile automation
+			appiumDriver = (AppiumDriver) driver;
 		} else {
-			throw new IllegalArgumentException("Invalid platform: " + platform
-					+ ". Please set the 'platform' variable to 'web', 'android', or 'ios'.");
+			throw new IllegalArgumentException("Unsupported platform: " + platform);
 		}
+
 	}
 
-	@AfterMethod
+	@AfterClass
 	public void teardown() {
-		if (driver != null) {
-			driver.quit();
-		}
-		if (appiumDriver != null) {
-			appiumDriver.quit();
-		}
+		WebDriverManager.quitBrowser();
 	}
 }

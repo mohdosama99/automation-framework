@@ -1,12 +1,7 @@
 package commonUtilities;
 
-
 import java.time.Duration;
-import java.util.Random;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.JavascriptException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -30,10 +25,10 @@ public class CommonFunction {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
 	}
-	
+
 	public void scrollToElement(WebElement element) {
 		actions = new Actions(driver);
-        actions.moveToElement(element).perform();
+		actions.moveToElement(element).perform();
 	}
 
 	public void waitForSeconds(int seconds) {
@@ -43,7 +38,7 @@ public class CommonFunction {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public void SelectByValue(WebElement ele, String value) {
 		Select select = new Select(ele);
 		ele.click();

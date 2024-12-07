@@ -15,23 +15,28 @@ public class ConfigReader {
 	private static String env;
 
 	static {
-
-		platform = System.getenv("platform");
-		if (platform == null || platform.isEmpty()) {
+		// Fetch platform from environment variables or system properties
+		platform = System.getenv("platform"); // Try to get the platform from environment variables
+		if (platform == null || platform.isEmpty() || platform.isBlank()) {
 			platform = Reporter.getCurrentTestResult().getTestContext().getCurrentXmlTest().getParameter("platform");
-			if (platform == null || platform.isEmpty()) {
-				throw new IllegalArgumentException(
-						"Platform not specified. Please set the 'platform' environment variable or define it in the TestNG XML file.");
-			}
 		}
 
+		// Throw an error if platform is not provided
+		if (platform == null || platform.isEmpty() || platform.isBlank()) {
+			throw new IllegalArgumentException(
+					"Platform is mandatory. Please set the 'platform' environment variable or define it in the TestNG XML file.");
+		}
+		// Handle environment variable
 		env = System.getenv("env");
-
-		if (env == null || env.isEmpty()) {
+		if (env == null || env.isEmpty() || env.isBlank()) {
+			env = Reporter.getCurrentTestResult().getTestContext().getCurrentXmlTest().getParameter("env");
+		}
+		if (env == null || env.isEmpty() || env.isBlank()) {
 			env = "prod"; // Default to "prod" if not set
 			System.out.println("Environment variable 'env' not set. Defaulting to: " + env);
-		} else {
-			System.out.println("Environment variable 'env' set to: " + env);
+		} else if (!env.equals("prod") && !env.equals("test")) {
+			throw new IllegalArgumentException(
+					"Invalid env: " + env + ". Please set the 'env' variable to 'prod' or 'test'.");
 		}
 
 		// Load the environment-specific properties file
@@ -50,8 +55,6 @@ public class ConfigReader {
 		} else {
 			browser = properties.getProperty("browser");
 		}
-		// browser = System.getenv("browser") != null ? System.getenv("browser") :
-		// properties.getProperty("browser");
 
 		// Fetch APK/IPA path based on platform
 		if (platform.equalsIgnoreCase("android")) {
@@ -60,9 +63,6 @@ public class ConfigReader {
 			apkPath = properties.getProperty("ios_app.ipaPath"); // Fetch iOS IPA path
 		} else if (platform.equalsIgnoreCase("web")) {
 			url = properties.getProperty("base_url");
-		} else {
-			throw new IllegalArgumentException(
-					"Invalid platform: " + platform + ". Please set the 'platform' variable to 'android' or 'ios'.");
 		}
 
 	}
