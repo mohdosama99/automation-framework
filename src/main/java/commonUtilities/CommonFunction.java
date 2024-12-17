@@ -18,7 +18,6 @@ public class CommonFunction {
 
 	public WebDriver driver;
 	private Actions actions;
-	private ExtentTest test;
 	
 	public CommonFunction(WebDriver driver) {
 		this.driver = driver;
@@ -54,9 +53,7 @@ public class CommonFunction {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 			wait.until(ExpectedConditions.elementToBeClickable(ele));
-			test.log(Status.PASS, "Test passed successfully.");
 		} catch (Exception e) {
-			test.log(Status.FAIL, "Test failed: " + e.getMessage());
 		}
 		
 	}

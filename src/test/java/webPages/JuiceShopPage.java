@@ -12,13 +12,11 @@ import org.slf4j.helpers.Reporter;
 import com.aventstack.extentreports.ExtentTest;
 
 import commonUtilities.CommonFunction;
-import commonUtilities.ExtentManager;
 
 public class JuiceShopPage {
 
 	private WebDriver driver;
 	CommonFunction CF;
-	private ExtentTest test;
 
 	public JuiceShopPage(WebDriver driver) {
 		this.driver = driver;

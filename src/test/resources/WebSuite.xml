@@ -2,6 +2,11 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Test Suite" parallel="classes" thread-count="5">
 	<!-- Defining a parameter in the XML -->
+
+	<listeners>
+		<listener class-name="commonUtilities.ExtentReportManager" />
+	</listeners>
+
 	<parameter name="platform" value="web" />
 	<parameter name="env" value="prod" />
 	<parameter name="browser" value="Chrome" />

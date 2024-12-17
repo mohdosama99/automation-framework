@@ -1,0 +1,268 @@
+2024-12-17 17:52:11 [main] DEBUG commonUtilities.ExtentReportManager -
+					onStart called for test suite: WebTest
+2024-12-17 17:52:11 [main] DEBUG commonUtilities.ExtentReportManager -
+					ExtentReport setup completed for: Test-report2024_12_17_17_52_11.html
+2024-12-17 17:52:21 [TestNG-test=WebTest-4] DEBUG base.BaseClass -
+					Starting test setup...
+2024-12-17 17:52:21 [TestNG-test=WebTest-4] DEBUG base.BaseClass -
+					Platform: web, Browser: chrome
+2024-12-17 17:52:21 [TestNG-test=WebTest-4] DEBUG base.BaseClass -
+					Initializing WebDriver for web testing...
+2024-12-17 17:52:21 [TestNG-test=WebTest-1] DEBUG base.BaseClass -
+					Starting test setup...
+2024-12-17 17:52:21 [TestNG-test=WebTest-1] DEBUG base.BaseClass -
+					Platform: web, Browser: chrome
+2024-12-17 17:52:21 [TestNG-test=WebTest-1] DEBUG base.BaseClass -
+					Initializing WebDriver for web testing...
+2024-12-17 17:52:24 [TestNG-test=WebTest-3] DEBUG base.BaseClass -
+					Starting test setup...
+2024-12-17 17:52:24 [TestNG-test=WebTest-3] DEBUG base.BaseClass -
+					Platform: web, Browser: chrome
+2024-12-17 17:52:24 [TestNG-test=WebTest-3] DEBUG base.BaseClass -
+					Initializing WebDriver for web testing...
+2024-12-17 17:52:25 [TestNG-test=WebTest-2] DEBUG base.BaseClass -
+					Starting test setup...
+2024-12-17 17:52:25 [TestNG-test=WebTest-2] DEBUG base.BaseClass -
+					Platform: web, Browser: chrome
+2024-12-17 17:52:25 [TestNG-test=WebTest-2] DEBUG base.BaseClass -
+					Initializing WebDriver for web testing...
+2024-12-17 17:52:27 [TestNG-test=WebTest-4] DEBUG commonUtilities.ExtentReportManager -
+					onTestSuccess called for: VerifyProductPopupAndReviewTest
+2024-12-17 17:52:27 [TestNG-test=WebTest-4] INFO  commonUtilities.ExtentReportManager -
+					Test VerifyProductPopupAndReviewTest passed successfully.
+2024-12-17 17:52:27 [TestNG-test=WebTest-4] INFO  base.BaseClass -
+					Tearing down the driver...
+2024-12-17 17:52:27 [TestNG-test=WebTest-4] INFO  base.BaseClass -
+					Driver quit successfully.
+2024-12-17 17:52:35 [TestNG-test=WebTest-3] DEBUG commonUtilities.ExtentReportManager -
+					onTestSuccess called for: VerifyAllItemsDisplayedTest
+2024-12-17 17:52:35 [TestNG-test=WebTest-3] INFO  commonUtilities.ExtentReportManager -
+					Test VerifyAllItemsDisplayedTest passed successfully.
+2024-12-17 17:52:35 [TestNG-test=WebTest-3] INFO  base.BaseClass -
+					Tearing down the driver...
+2024-12-17 17:52:35 [TestNG-test=WebTest-3] INFO  base.BaseClass -
+					Driver quit successfully.
+2024-12-17 17:52:41 [TestNG-test=WebTest-1] DEBUG commonUtilities.ExtentReportManager -
+					onTestFailure called for: CompleteFlowTest
+2024-12-17 17:52:41 [TestNG-test=WebTest-1] ERROR commonUtilities.ExtentReportManager -
+					Test CompleteFlowTest failed with error: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='fa-layers-counter fa-layers-top-right fa-3x warn-notification']"}
+  (Session info: chrome=131.0.6778.140)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.5', java.version: '20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ea8c47dc8fa31799d922bca65b316d7a, findElement {using=xpath, value=//span[@class='fa-layers-counter fa-layers-top-right fa-3x warn-notification']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: /var/folders/rp/1t083lg12y3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63441}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:63441/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ea8c47dc8fa31799d922bca65b316d7a
+2024-12-17 17:52:41 [TestNG-test=WebTest-1] INFO  base.BaseClass -
+					Tearing down the driver...
+2024-12-17 17:52:41 [TestNG-test=WebTest-1] INFO  base.BaseClass -
+					Driver quit successfully.
+2024-12-17 17:53:00 [TestNG-test=WebTest-2] DEBUG commonUtilities.ExtentReportManager -
+					onTestSuccess called for: RegistrationFlowTest
+2024-12-17 17:53:00 [TestNG-test=WebTest-2] INFO  commonUtilities.ExtentReportManager -
+					Test RegistrationFlowTest passed successfully.
+2024-12-17 17:53:00 [TestNG-test=WebTest-2] INFO  base.BaseClass -
+					Tearing down the driver...
+2024-12-17 17:53:00 [TestNG-test=WebTest-2] INFO  base.BaseClass -
+					Driver quit successfully.
+2024-12-17 17:53:00 [main] DEBUG commonUtilities.ExtentReportManager -
+					onFinish called for test suite: WebTest
+2024-12-17 17:55:17 [main] DEBUG commonUtilities.ExtentReportManager -
+					onStart called for test suite: WebTest
+2024-12-17 17:55:17 [main] DEBUG commonUtilities.ExtentReportManager -
+					ExtentReport setup completed for: Test-report2024_12_17.html
+2024-12-17 17:55:24 [TestNG-test=WebTest-2] DEBUG base.BaseClass -
+					Starting test setup...
+2024-12-17 17:55:24 [TestNG-test=WebTest-2] DEBUG base.BaseClass -
+					Platform: web, Browser: chrome
+2024-12-17 17:55:24 [TestNG-test=WebTest-2] DEBUG base.BaseClass -
+					Initializing WebDriver for web testing...
+2024-12-17 17:55:25 [TestNG-test=WebTest-1] DEBUG base.BaseClass -
+					Starting test setup...
+2024-12-17 17:55:25 [TestNG-test=WebTest-1] DEBUG base.BaseClass -
+					Platform: web, Browser: chrome
+2024-12-17 17:55:25 [TestNG-test=WebTest-1] DEBUG base.BaseClass -
+					Initializing WebDriver for web testing...
+2024-12-17 17:55:25 [TestNG-test=WebTest-3] DEBUG base.BaseClass -
+					Starting test setup...
+2024-12-17 17:55:25 [TestNG-test=WebTest-3] DEBUG base.BaseClass -
+					Platform: web, Browser: chrome
+2024-12-17 17:55:25 [TestNG-test=WebTest-3] DEBUG base.BaseClass -
+					Initializing WebDriver for web testing...
+2024-12-17 17:55:27 [TestNG-test=WebTest-4] DEBUG base.BaseClass -
+					Starting test setup...
+2024-12-17 17:55:27 [TestNG-test=WebTest-4] DEBUG base.BaseClass -
+					Platform: web, Browser: chrome
+2024-12-17 17:55:27 [TestNG-test=WebTest-4] DEBUG base.BaseClass -
+					Initializing WebDriver for web testing...
+2024-12-17 17:55:29 [TestNG-test=WebTest-4] DEBUG commonUtilities.ExtentReportManager -
+					onTestSuccess called for: VerifyProductPopupAndReviewTest
+2024-12-17 17:55:29 [TestNG-test=WebTest-4] INFO  commonUtilities.ExtentReportManager -
+					Test VerifyProductPopupAndReviewTest passed successfully.
+2024-12-17 17:55:29 [TestNG-test=WebTest-4] INFO  base.BaseClass -
+					Tearing down the driver...
+2024-12-17 17:55:30 [TestNG-test=WebTest-4] INFO  base.BaseClass -
+					Driver quit successfully.
+2024-12-17 17:55:36 [TestNG-test=WebTest-3] DEBUG commonUtilities.ExtentReportManager -
+					onTestSuccess called for: VerifyAllItemsDisplayedTest
+2024-12-17 17:55:36 [TestNG-test=WebTest-3] INFO  commonUtilities.ExtentReportManager -
+					Test VerifyAllItemsDisplayedTest passed successfully.
+2024-12-17 17:55:36 [TestNG-test=WebTest-3] INFO  base.BaseClass -
+					Tearing down the driver...
+2024-12-17 17:55:36 [TestNG-test=WebTest-3] INFO  base.BaseClass -
+					Driver quit successfully.
+2024-12-17 17:55:42 [TestNG-test=WebTest-1] DEBUG commonUtilities.ExtentReportManager -
+					onTestFailure called for: CompleteFlowTest
+2024-12-17 17:55:42 [TestNG-test=WebTest-1] ERROR commonUtilities.ExtentReportManager -
+					Test CompleteFlowTest failed with error: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='fa-layers-counter fa-layers-top-right fa-3x warn-notification']"}
+  (Session info: chrome=131.0.6778.140)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.5', java.version: '20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a9c415c6d07118847487140ced769232, findElement {value=//span[@class='fa-layers-counter fa-layers-top-right fa-3x warn-notification'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: /var/folders/rp/1t083lg12y3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63548}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:63548/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a9c415c6d07118847487140ced769232
+2024-12-17 17:55:42 [TestNG-test=WebTest-1] INFO  base.BaseClass -
+					Tearing down the driver...
+2024-12-17 17:55:42 [TestNG-test=WebTest-1] INFO  base.BaseClass -
+					Driver quit successfully.
+2024-12-17 17:55:59 [TestNG-test=WebTest-2] DEBUG commonUtilities.ExtentReportManager -
+					onTestSuccess called for: RegistrationFlowTest
+2024-12-17 17:55:59 [TestNG-test=WebTest-2] INFO  commonUtilities.ExtentReportManager -
+					Test RegistrationFlowTest passed successfully.
+2024-12-17 17:55:59 [TestNG-test=WebTest-2] INFO  base.BaseClass -
+					Tearing down the driver...
+2024-12-17 17:56:00 [TestNG-test=WebTest-2] INFO  base.BaseClass -
+					Driver quit successfully.
+2024-12-17 17:56:00 [main] DEBUG commonUtilities.ExtentReportManager -
+					onFinish called for test suite: WebTest
+2024-12-17 17:58:17 [main] DEBUG commonUtilities.ExtentReportManager -
+					onStart called for test suite: WebTest
+2024-12-17 17:58:17 [main] DEBUG commonUtilities.ExtentReportManager -
+					ExtentReport setup completed for: Test-report2024_12_17.html
+2024-12-17 17:58:26 [TestNG-test=WebTest-1] DEBUG base.BaseClass -
+					Starting test setup...
+2024-12-17 17:58:26 [TestNG-test=WebTest-1] DEBUG base.BaseClass -
+					Platform: web, Browser: chrome
+2024-12-17 17:58:26 [TestNG-test=WebTest-1] DEBUG base.BaseClass -
+					Initializing WebDriver for web testing...
+2024-12-17 17:58:26 [TestNG-test=WebTest-3] DEBUG base.BaseClass -
+					Starting test setup...
+2024-12-17 17:58:26 [TestNG-test=WebTest-3] DEBUG base.BaseClass -
+					Platform: web, Browser: chrome
+2024-12-17 17:58:26 [TestNG-test=WebTest-3] DEBUG base.BaseClass -
+					Initializing WebDriver for web testing...
+2024-12-17 17:58:29 [TestNG-test=WebTest-4] DEBUG base.BaseClass -
+					Starting test setup...
+2024-12-17 17:58:29 [TestNG-test=WebTest-4] DEBUG base.BaseClass -
+					Platform: web, Browser: chrome
+2024-12-17 17:58:29 [TestNG-test=WebTest-4] DEBUG base.BaseClass -
+					Initializing WebDriver for web testing...
+2024-12-17 17:58:30 [TestNG-test=WebTest-2] DEBUG base.BaseClass -
+					Starting test setup...
+2024-12-17 17:58:30 [TestNG-test=WebTest-2] DEBUG base.BaseClass -
+					Platform: web, Browser: chrome
+2024-12-17 17:58:30 [TestNG-test=WebTest-2] DEBUG base.BaseClass -
+					Initializing WebDriver for web testing...
+2024-12-17 17:58:33 [TestNG-test=WebTest-4] DEBUG commonUtilities.ExtentReportManager -
+					onTestSuccess called for: VerifyProductPopupAndReviewTest
+2024-12-17 17:58:33 [TestNG-test=WebTest-4] INFO  commonUtilities.ExtentReportManager -
+					Test VerifyProductPopupAndReviewTest passed successfully.
+2024-12-17 17:58:33 [TestNG-test=WebTest-4] INFO  base.BaseClass -
+					Tearing down the driver...
+2024-12-17 17:58:33 [TestNG-test=WebTest-4] INFO  base.BaseClass -
+					Driver quit successfully.
+2024-12-17 17:58:40 [TestNG-test=WebTest-3] DEBUG commonUtilities.ExtentReportManager -
+					onTestSuccess called for: VerifyAllItemsDisplayedTest
+2024-12-17 17:58:40 [TestNG-test=WebTest-3] INFO  commonUtilities.ExtentReportManager -
+					Test VerifyAllItemsDisplayedTest passed successfully.
+2024-12-17 17:58:40 [TestNG-test=WebTest-3] INFO  base.BaseClass -
+					Tearing down the driver...
+2024-12-17 17:58:41 [TestNG-test=WebTest-3] INFO  base.BaseClass -
+					Driver quit successfully.
+2024-12-17 17:58:51 [TestNG-test=WebTest-1] DEBUG commonUtilities.ExtentReportManager -
+					onTestFailure called for: CompleteFlowTest
+2024-12-17 17:58:51 [TestNG-test=WebTest-1] ERROR commonUtilities.ExtentReportManager -
+					Test CompleteFlowTest failed with error: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='fa-layers-counter fa-layers-top-right fa-3x warn-notification']"}
+  (Session info: chrome=131.0.6778.140)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.5', java.version: '20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d533e4022597563db5b16a861638b42e, findElement {using=xpath, value=//span[@class='fa-layers-counter fa-layers-top-right fa-3x warn-notification']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: /var/folders/rp/1t083lg12y3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63673}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:63673/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d533e4022597563db5b16a861638b42e
+2024-12-17 17:58:51 [TestNG-test=WebTest-1] INFO  base.BaseClass -
+					Tearing down the driver...
+2024-12-17 17:58:51 [TestNG-test=WebTest-1] INFO  base.BaseClass -
+					Driver quit successfully.
+2024-12-17 17:59:04 [TestNG-test=WebTest-2] DEBUG commonUtilities.ExtentReportManager -
+					onTestSuccess called for: RegistrationFlowTest
+2024-12-17 17:59:04 [TestNG-test=WebTest-2] INFO  commonUtilities.ExtentReportManager -
+					Test RegistrationFlowTest passed successfully.
+2024-12-17 17:59:04 [TestNG-test=WebTest-2] INFO  base.BaseClass -
+					Tearing down the driver...
+2024-12-17 17:59:04 [TestNG-test=WebTest-2] INFO  base.BaseClass -
+					Driver quit successfully.
+2024-12-17 17:59:05 [main] DEBUG commonUtilities.ExtentReportManager -
+					onFinish called for test suite: WebTest
+2024-12-17 18:01:33 [main] DEBUG commonUtilities.ExtentReportManager -
+					onStart called for test suite: AppTest
+2024-12-17 18:01:33 [main] DEBUG commonUtilities.ExtentReportManager -
+					ExtentReport setup completed for: Test-report2024_12_17.html
+2024-12-17 18:02:20 [TestNG-test=AppTest-1] DEBUG base.BaseClass -
+					Starting test setup...
+2024-12-17 18:02:20 [TestNG-test=AppTest-1] DEBUG base.BaseClass -
+					Platform: android, Browser: chrome
+2024-12-17 18:02:20 [TestNG-test=AppTest-1] DEBUG base.BaseClass -
+					Initializing AppiumDriver for mobile testing...
+2024-12-17 18:02:22 [TestNG-test=AppTest-1] DEBUG commonUtilities.ExtentReportManager -
+					onTestFailure called for: ChangeSettingFlow
+2024-12-17 18:02:22 [TestNG-test=AppTest-1] ERROR commonUtilities.ExtentReportManager -
+					Test ChangeSettingFlow failed with error: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.5', java.version: '20'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [07f915e3-f98e-4853-b78d-118f5f8f6ba9, findElement {using=id, value=android:id/button1}]
+Capabilities {appium:app: Desktop/automation-framewor..., appium:appPackage: org.wikipedia.alpha, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: Desktop/automation-framewor..., automationName: UiAutomator2, deviceName: emulator-5554, platformName: ANDROID}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2204, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 07f915e3-f98e-4853-b78d-118f5f8f6ba9
+2024-12-17 18:02:22 [TestNG-test=AppTest-1] INFO  base.BaseClass -
+					Tearing down the driver...
+2024-12-17 18:02:24 [TestNG-test=AppTest-1] INFO  base.BaseClass -
+					Driver quit successfully.
+2024-12-17 18:02:44 [TestNG-test=AppTest-1] DEBUG base.BaseClass -
+					Starting test setup...
+2024-12-17 18:02:44 [TestNG-test=AppTest-1] DEBUG base.BaseClass -
+					Platform: android, Browser: chrome
+2024-12-17 18:02:44 [TestNG-test=AppTest-1] DEBUG base.BaseClass -
+					Initializing AppiumDriver for mobile testing...
+2024-12-17 18:02:46 [TestNG-test=AppTest-1] DEBUG commonUtilities.ExtentReportManager -
+					onTestFailure called for: SearchFlow
+2024-12-17 18:02:46 [TestNG-test=AppTest-1] ERROR commonUtilities.ExtentReportManager -
+					Test SearchFlow failed with error: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.5', java.version: '20'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [ca4659e0-c6e9-4036-bfbb-147bb6f5ea16, findElement {using=id, value=android:id/button1}]
+Capabilities {appium:app: Desktop/automation-framewor..., appium:appPackage: org.wikipedia.alpha, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: Desktop/automation-framewor..., automationName: UiAutomator2, deviceName: emulator-5554, platformName: ANDROID}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2204, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: ca4659e0-c6e9-4036-bfbb-147bb6f5ea16
+2024-12-17 18:02:46 [TestNG-test=AppTest-1] INFO  base.BaseClass -
+					Tearing down the driver...
+2024-12-17 18:02:47 [TestNG-test=AppTest-1] INFO  base.BaseClass -
+					Driver quit successfully.
+2024-12-17 18:03:22 [TestNG-test=AppTest-1] DEBUG commonUtilities.ExtentReportManager -
+					onTestSkipped called for: TestAppFlow
+2024-12-17 18:03:22 [TestNG-test=AppTest-1] INFO  commonUtilities.ExtentReportManager -
+					Test TestAppFlow skipped with exception: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'org.wikipedia.alpha' application. Consider checking the driver's troubleshooting documentation. Original error: 'org.wikipedia.main.MainActivity' or 'org.wikipedia.alpha.org.wikipedia.main.MainActivity' never started. Consider checking the driver's troubleshooting documentation. 
+Host info: host: 'Mohds-MacBook-Air.local', ip: '2405:201:6002:b121:1c21:2009:3d0b:29e5%en0'
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.5', java.version: '20'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[Capabilities {appium:app: Desktop/automation-framewor..., appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}]}]
+Capabilities {appium:app: Desktop/automation-framewor..., appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}
+2024-12-17 18:03:22 [main] DEBUG commonUtilities.ExtentReportManager -
+					onFinish called for test suite: AppTest

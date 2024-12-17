@@ -2,6 +2,11 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="AppSuite" parallel="classes" thread-count="1">
 	<!-- Defining a parameter in the XML -->
+
+	<listeners>
+		<listener class-name="commonUtilities.ExtentReportManager" />
+	</listeners>
+
 	<parameter name="platform" value="android" />
 	<parameter name="env" value="prod" />
 

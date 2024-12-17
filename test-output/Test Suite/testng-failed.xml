@@ -4,6 +4,9 @@
   <parameter name="browser" value="Chrome"/>
   <parameter name="env" value="prod"/>
   <parameter name="platform" value="web"/>
+  <listeners>
+    <listener class-name="commonUtilities.ExtentReportManager"/>
+  </listeners>
   <test thread-count="5" parallel="classes" name="WebTest(failed)">
     <classes>
       <class name="webTests.CompleteFlow">
