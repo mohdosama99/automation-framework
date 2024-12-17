@@ -81,17 +81,16 @@ These reports are stored in the /reports folder and provide an overall summary, 
 - Test Failed: Indicates that the test failed along with the failure message.
 - Test Skipped: Indicates that the test was skipped and the reason for skipping.
 
-**Example of Test Execution**
+## Example of Test Execution
+
 To run the tests, use the following commands:
 
-a. **For Web Tests:**
+- **For Web Tests**:
    ```bash
-mvn clean test -DsuiteXmlFile=WebSuite.xml
-
-
-b. **For App Tests:**
+   mvn clean test -DsuiteXmlFile=WebSuite.xml
+   
+- **For App Tests**:
    ```bash
-mvn clean test -DsuiteXmlFile=AppSuite.xml
+   mvn clean test -DsuiteXmlFile=AppSuite.xml
 
-
-After test execution, the logs and the ExtentReports HTML report will be generated in the logs and reports directories, respectively.
+After executing the above commands, the logs and the ExtentReports HTML report will be generated in the logs and reports directories, respectively.
