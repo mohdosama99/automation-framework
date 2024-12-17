@@ -3,8 +3,11 @@ package webTests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.ExtentTest;
+
 import base.BaseClass;
 import commonUtilities.CommonFunction;
+import commonUtilities.ExtentManager;
 import webPages.JuiceShopPage;
 
 public class VerifyAllItemsDisplayed extends BaseClass {

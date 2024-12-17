@@ -9,13 +9,19 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+
 import commonUtilities.ConfigReader;
+import commonUtilities.ExtentManager;
 import io.appium.java_client.AppiumDriver;
 
 public class BaseClass {
 	protected WebDriver driver;
 	protected AppiumDriver appiumDriver; // For mobile platforms
 	protected RemoteWebDriver remoteDriver; // For web platforms
+	private ExtentReports extent;
+    private ExtentTest test;
 
 	@BeforeClass
 	public void setup() throws Exception {
@@ -32,9 +38,17 @@ public class BaseClass {
 		}
 
 	}
+	@BeforeClass
+	public void setupReport() {
+        extent = ExtentManager.getExtentReports();
+    }
 
 	@AfterClass
 	public void teardown() {
 		WebDriverManager.quitBrowser();
 	}
+	@AfterClass
+	public void teardownReport() {
+        ExtentManager.flushReports();
+    }
 }

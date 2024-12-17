@@ -11,11 +11,15 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+
 public class CommonFunction {
 
 	public WebDriver driver;
 	private Actions actions;
-
+	private ExtentTest test;
+	
 	public CommonFunction(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -47,8 +51,14 @@ public class CommonFunction {
 	}
 
 	public void waitForElementToBeClickable(WebElement ele) {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-		wait.until(ExpectedConditions.elementToBeClickable(ele));
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+			wait.until(ExpectedConditions.elementToBeClickable(ele));
+			test.log(Status.PASS, "Test passed successfully.");
+		} catch (Exception e) {
+			test.log(Status.FAIL, "Test failed: " + e.getMessage());
+		}
+		
 	}
 
 	public void waitForElementToVisible(String xpath) {

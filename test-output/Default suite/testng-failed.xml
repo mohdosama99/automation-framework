@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="appTests.TestAppFlow">
+      <class name="webTests.VerifyAllItemsDisplayed">
         <methods>
-          <include name="TestAppFlow"/>
+          <include name="setupReport"/>
           <include name="teardown"/>
+          <include name="VerifyAllItemsDisplayedTest"/>
           <include name="setup"/>
+          <include name="teardownReport"/>
         </methods>
-      </class> <!-- appTests.TestAppFlow -->
+      </class> <!-- webTests.VerifyAllItemsDisplayed -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
