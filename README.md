@@ -84,11 +84,11 @@ These reports are stored in the /reports folder and provide an overall summary, 
 **Example of Test Execution**
 To run the tests, use the following commands:
 
-**For Web Tests:**
+a. **For Web Tests:**
 ```bash
 mvn clean test -DsuiteXmlFile=WebSuite.xml
 
-**For App Tests:**
+b. **For App Tests:**
 ```bash
 mvn clean test -DsuiteXmlFile=AppSuite.xml
 
