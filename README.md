@@ -85,11 +85,13 @@ These reports are stored in the /reports folder and provide an overall summary, 
 To run the tests, use the following commands:
 
 a. **For Web Tests:**
-```bash
+   ```bash
 mvn clean test -DsuiteXmlFile=WebSuite.xml
 
+
 b. **For App Tests:**
-```bash
+   ```bash
 mvn clean test -DsuiteXmlFile=AppSuite.xml
+
 
 After test execution, the logs and the ExtentReports HTML report will be generated in the logs and reports directories, respectively.
