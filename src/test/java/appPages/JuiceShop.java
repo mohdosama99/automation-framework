@@ -33,6 +33,7 @@ public class JuiceShop {
 
 	public void DismissAlerts() {
 		dismissAlert.click();
+		cf.waitForSeconds(2);
 	}
 
 	public void scrollToBottom() {
@@ -130,7 +131,7 @@ public class JuiceShop {
 		return HomePage.isDisplayed();
 	}
 
-	@FindBy(id = "android:id/button1")
+	@FindBy(xpath = "//android.widget.Button[@resource-id=\"android:id/button1\"]")
 	private WebElement dismissAlert;
 
 	@FindBy(id = "org.wikipedia.alpha:id/single_fragment_toolbar")

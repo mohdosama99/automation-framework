@@ -9,6 +9,13 @@
   </listeners>
   <test thread-count="5" parallel="classes" name="WebTest(failed)">
     <classes>
+      <class name="webTests.RegistrationFlow">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="RegistrationFlowTest"/>
+        </methods>
+      </class> <!-- webTests.RegistrationFlow -->
       <class name="webTests.CompleteFlow">
         <methods>
           <include name="teardown"/>

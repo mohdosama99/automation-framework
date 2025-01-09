@@ -3,7 +3,7 @@ package commonUtilities;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
-
+import java.nio.file.Paths;
 import org.testng.Reporter;
 
 public class ConfigReader {
@@ -56,11 +56,17 @@ public class ConfigReader {
 			browser = properties.getProperty("browser");
 		}
 
+		String systemPath = System.getProperty("user.dir");
 		// Fetch APK/IPA path based on platform
 		if (platform.equalsIgnoreCase("android")) {
-			apkPath = properties.getProperty("android_app.apkPath"); // Fetch Android APK path
+//			String relativePath = properties.getProperty("android_app.apkPath");
+//			apkPath = Paths.get("src", "main", "resources", relativePath).toString();
+//			apkPath = properties.getProperty("android_app.apkPath"); // Fetch Android APK path
+			apkPath = systemPath+"/src/main/resources/apps/WikipediaSample.apk";
 		} else if (platform.equalsIgnoreCase("ios")) {
-			apkPath = properties.getProperty("ios_app.ipaPath"); // Fetch iOS IPA path
+			String relativePathiOS = properties.getProperty("ios_app.ipaPath");
+			apkPath = Paths.get("src", "main", "resources", relativePathiOS).toString();
+			//apkPath = properties.getProperty("ios_app.ipaPath"); // Fetch iOS IPA path
 		} else if (platform.equalsIgnoreCase("web")) {
 			url = properties.getProperty("base_url");
 		}

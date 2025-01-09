@@ -8,13 +8,6 @@
   </listeners>
   <test thread-count="1" parallel="classes" name="AppTest(failed)">
     <classes>
-      <class name="appTests.TestAppFlow">
-        <methods>
-          <include name="TestAppFlow"/>
-          <include name="teardown"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- appTests.TestAppFlow -->
       <class name="appTests.SearchFlow">
         <methods>
           <include name="teardown"/>
@@ -22,13 +15,6 @@
           <include name="SearchFlow"/>
         </methods>
       </class> <!-- appTests.SearchFlow -->
-      <class name="appTests.ChangeSetting">
-        <methods>
-          <include name="teardown"/>
-          <include name="ChangeSettingFlow"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- appTests.ChangeSetting -->
     </classes>
   </test> <!-- AppTest(failed) -->
 </suite> <!-- Failed suite [AppSuite] -->

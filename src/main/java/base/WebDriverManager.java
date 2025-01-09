@@ -66,6 +66,7 @@ public class WebDriverManager {
 			options.setDeviceName("emulator-5554"); // You can dynamically pass the device name if needed
 			options.setAutomationName("UiAutomator2");
 			options.setApp(appPath);
+			options.setAutoGrantPermissions(true);
 			tlDriver.set(new AndroidDriver(new URL("http://0.0.0.0:4723"), options));
 		} else if (platform.equalsIgnoreCase("ios")) {
 			if (appPath == null || appPath.isEmpty()) {

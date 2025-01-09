@@ -9,43 +9,18 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">AppSuite</th></tr>
-<tr><td><a href="#t0">AppTest</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">2</td><td class="num">108,766</td><td></td><td></td></tr>
+<tr><td><a href="#t0">AppTest</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">94,571</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">AppSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">AppTest &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">appTests.TestAppFlow</td><td><a href="#m0">setup</a></td><td rowspan="1">1734438767683</td><td rowspan="1">34464</td></tr><tr><th colspan="4">AppTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">appTests.ChangeSetting</td><td><a href="#m1">ChangeSettingFlow</a></td><td rowspan="1">1734438740751</td><td rowspan="1">1819</td></tr><tr class="failedodd"><td rowspan="1">appTests.SearchFlow</td><td><a href="#m2">SearchFlow</a></td><td rowspan="1">1734438764985</td><td rowspan="1">1250</td></tr><tr><th colspan="4">AppTest &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">appTests.TestAppFlow</td><td><a href="#m3">teardown</a></td><td rowspan="1">1734438802171</td><td rowspan="1">-1734438802171</td></tr><tr><th colspan="4">AppTest &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">appTests.TestAppFlow</td><td><a href="#m4">TestAppFlow</a></td><td rowspan="1">1734438802156</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">AppSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">AppTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">appTests.SearchFlow</td><td><a href="#m0">SearchFlow</a></td><td rowspan="1">1736428261421</td><td rowspan="1">42649</td></tr><tr><th colspan="4">AppTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">appTests.ChangeSetting</td><td><a href="#m1">ChangeSettingFlow</a></td><td rowspan="1">1736428237772</td><td rowspan="1">15555</td></tr><tr class="passedodd"><td rowspan="1">appTests.TestAppFlow</td><td><a href="#m2">TestAppFlow</a></td><td rowspan="1">1736428310924</td><td rowspan="1">13337</td></tr></tbody>
 </table>
-<h2>AppTest</h2><h3 id="m0">appTests.TestAppFlow#setup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the &apos;org.wikipedia.alpha&apos; application. Consider checking the driver&apos;s troubleshooting documentation. Original error: &apos;org.wikipedia.main.MainActivity&apos; or &apos;org.wikipedia.alpha.org.wikipedia.main.MainActivity&apos; never started. Consider checking the driver&apos;s troubleshooting documentation. 
-Host info: host: &apos;Mohds-MacBook-Air.local&apos;, ip: &apos;2405:201:6002:b121:1c21:2009:3d0b:29e5%en0&apos;
-Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;20&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, newSession {capabilities=[Capabilities {appium:app: Desktop/automation-framewor..., appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}]}]
-Capabilities {appium:app: Desktop/automation-framewor..., appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:270)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:91)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:103)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
-	at base.WebDriverManager.initDriver(WebDriverManager.java:69)
-	at base.WebDriverManager.getInstance(WebDriverManager.java:95)
-	at base.BaseClass.setup(BaseClass.java:21)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1623)
-... Removed 8 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">appTests.ChangeSetting#ChangeSettingFlow</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+<h2>AppTest</h2><h3 id="m0">appTests.SearchFlow#SearchFlow</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;20&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;17.0.13&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [07f915e3-f98e-4853-b78d-118f5f8f6ba9, findElement {using=id, value=android:id/button1}]
-Capabilities {appium:app: Desktop/automation-framewor..., appium:appPackage: org.wikipedia.alpha, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: Desktop/automation-framewor..., automationName: UiAutomator2, deviceName: emulator-5554, platformName: ANDROID}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2204, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 07f915e3-f98e-4853-b78d-118f5f8f6ba9
+Command: [7150be4f-9904-4d8e-8c83-f0d0d30629f5, findElement {using=xpath, value=//android.widget.ImageButton[@content-desc=&quot;Navigate up&quot;]}]
+Capabilities {appium:app: /Users/mohdosama/Project/au..., appium:appPackage: org.wikipedia.alpha, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/mohdosama/Project/au..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, platformName: ANDROID}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2204, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 7150be4f-9904-4d8e-8c83-f0d0d30629f5
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -53,70 +28,21 @@ Session ID: 07f915e3-f98e-4853-b78d-118f5f8f6ba9
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
-	at appPages.JuiceShop.DismissAlerts(JuiceShop.java:35)
-	at appTests.ChangeSetting.ChangeSettingFlow(ChangeSetting.java:20)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1623)
-... Removed 13 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">appTests.SearchFlow#SearchFlow</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;20&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [ca4659e0-c6e9-4036-bfbb-147bb6f5ea16, findElement {using=id, value=android:id/button1}]
-Capabilities {appium:app: Desktop/automation-framewor..., appium:appPackage: org.wikipedia.alpha, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: Desktop/automation-framewor..., automationName: UiAutomator2, deviceName: emulator-5554, platformName: ANDROID}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2204, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: ca4659e0-c6e9-4036-bfbb-147bb6f5ea16
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
-	at appPages.JuiceShop.DismissAlerts(JuiceShop.java:35)
-	at appTests.SearchFlow.SearchFlow(SearchFlow.java:17)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1623)
-... Removed 13 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">appTests.TestAppFlow#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">appTests.TestAppFlow#TestAppFlow</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the &apos;org.wikipedia.alpha&apos; application. Consider checking the driver&apos;s troubleshooting documentation. Original error: &apos;org.wikipedia.main.MainActivity&apos; or &apos;org.wikipedia.alpha.org.wikipedia.main.MainActivity&apos; never started. Consider checking the driver&apos;s troubleshooting documentation. 
-Host info: host: &apos;Mohds-MacBook-Air.local&apos;, ip: &apos;2405:201:6002:b121:1c21:2009:3d0b:29e5%en0&apos;
-Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;20&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, newSession {capabilities=[Capabilities {appium:app: Desktop/automation-framewor..., appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}]}]
-Capabilities {appium:app: Desktop/automation-framewor..., appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:270)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:91)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:103)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
-	at base.WebDriverManager.initDriver(WebDriverManager.java:69)
-	at base.WebDriverManager.getInstance(WebDriverManager.java:95)
-	at base.BaseClass.setup(BaseClass.java:21)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1623)
-... Removed 8 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at appPages.JuiceShop.NavigateBackToHomePage(JuiceShop.java:87)
+	at appTests.SearchFlow.SearchFlow(SearchFlow.java:21)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">appTests.ChangeSetting#ChangeSettingFlow</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">appTests.TestAppFlow#TestAppFlow</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
